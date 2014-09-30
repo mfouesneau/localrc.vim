@@ -1,0 +1,47 @@
+localrc.vim
+===========
+
+localrc                 Version 1.0                   *localvimrc* *localrc* *lvimrc*
+
+|localvimrc-description|     Description
+|localvimrc-variables|       Variables
+|localvimrc-contribute|      Contribute
+|localvimrc-changelog|       Changelog
+
+
+==============================================================================
+DESCRIPTION                                             *localvimrc-description*
+
+This plugin searches for local vimrc files in the file system tree of the
+currently opened file. It searches for all local rc files in the current
+directory
+By default localrc files are defined to match `*lvimrc` file pattern.
+But the filename pattern is customizable through the global variable
+`g:lvimrc_name`.
+
+Note, there is no security check, the plugin do not ask for confirmation before
+loading a local vimrc file. 
+
+==============================================================================
+
+==============================================================================
+VARIABLES                                                 *localvimrc-variables*
+
+The plugin provides a convenience variable to make it easier to set up
+
+ let g:lvimrc_name = '*lvimrc'
+
+==============================================================================
+CONTRIBUTE                                               *localvimrc-contribute*
+
+To contact the author use github repository
+If you think this plugin could be improved, fork on GitHub and send a pull
+request or just tell me your ideas.
+
+GitHub:    https://github.com/mfouesneau/localrc.vim
+
+==============================================================================
+CHANGELOG                                                 *localvimrc-changelog*
+
+v1.0: initial version
+	simplistic initial version
